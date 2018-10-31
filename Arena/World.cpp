@@ -16,7 +16,7 @@ unsigned int World::get_empty()
 	unsigned int entity;
 	for (entity = 0; entity < ENTITY_COUNT; ++entity)
 	{
-		if (m_mask[entity] == CompMask::NONE)
+		if (m_mask[entity] == CompMask::None)
 		{
 			return(entity);
 		}
@@ -29,11 +29,11 @@ void World::give_position(unsigned int entity, float x, float y)
 {
 	m_position[entity].x = { x };
 	m_position[entity].y = { y };
-	m_mask[entity] |= { CompMask::Position };
+	m_mask[entity] |= CompMask::Position;
 }
 
 void World::give_sprite(unsigned int entity, Sprite sprite)
 {
 	m_sprite[entity]={ sprite };
-	m_mask[entity] |= { CompMask::Sprite };
+	m_mask[entity] |= CompMask::Sprite;
 }

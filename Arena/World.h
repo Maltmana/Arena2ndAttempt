@@ -19,7 +19,7 @@ public:
 	void give_sprite(unsigned int entity, Sprite sprite);
 private:
 public:
-	CompMask m_mask[ENTITY_COUNT];
+	int m_mask[ENTITY_COUNT];
 	Vec2<float> m_position[ENTITY_COUNT];
 	//Velocity velocity[ENTITY_COUNT];
 	Sprite m_sprite[ENTITY_COUNT];
