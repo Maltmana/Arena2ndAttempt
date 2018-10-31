@@ -139,6 +139,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="DrawingSystem.cpp" />
     <ClCompile Include="Game.cpp" />
     <ClCompile Include="Graphic.cpp" />
     <ClCompile Include="GraphicContainer.cpp" />
@@ -147,6 +148,7 @@
     <ClCompile Include="World.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="DrawingSystem.h" />
     <ClInclude Include="Flags.h" />
     <ClInclude Include="Game.h" />
     <ClInclude Include="Graphic.h" />
