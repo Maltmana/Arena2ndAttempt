@@ -16,6 +16,30 @@
     <Filter Include="Source Files\main">
       <UniqueIdentifier>{2a6bd5bc-eae2-4746-a123-cae748f41ea4}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Header Files\Systems">
+      <UniqueIdentifier>{8edaafc8-75f1-4226-89ec-3c0a04d739a7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\NewFilter1">
+      <UniqueIdentifier>{5dd8b729-973e-4862-b091-4456088b5c97}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\NewFilter2">
+      <UniqueIdentifier>{ea0f9336-11f6-4105-9369-5fb888532fa9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\NewFilter3">
+      <UniqueIdentifier>{80d9e715-dae7-44f7-8143-5da1cc75d0eb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\NewFilter4">
+      <UniqueIdentifier>{bebe34b9-7199-4573-b023-357c1f478916}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\NewFilter5">
+      <UniqueIdentifier>{b9b2e6ee-aa2e-47a0-a048-c5246d9901ba}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\NewFilter6">
+      <UniqueIdentifier>{44ef6012-b358-4fef-86f8-3c796a109c36}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\NewFilter7">
+      <UniqueIdentifier>{2dd0871c-485d-4d5c-805c-af9644b708f0}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Window.cpp">
@@ -44,41 +68,41 @@
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Window.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="Game.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="stdafx.h">
-      <Filter>Header Files</Filter>
+      <Filter>Header Files\NewFilter1</Filter>
     </ClInclude>
     <ClInclude Include="World.h">
-      <Filter>Header Files</Filter>
+      <Filter>Header Files\NewFilter2</Filter>
     </ClInclude>
     <ClInclude Include="ray.h">
-      <Filter>Header Files</Filter>
+      <Filter>Header Files\NewFilter7</Filter>
+    </ClInclude>
+    <ClInclude Include="stdafx.h">
+      <Filter>Header Files\NewFilter7</Filter>
     </ClInclude>
     <ClInclude Include="Graphic.h">
-      <Filter>Header Files</Filter>
+      <Filter>Header Files\NewFilter5</Filter>
     </ClInclude>
     <ClInclude Include="GraphicContainer.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Vec2.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Flags.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="DrawingSystem.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Sprite.h">
-      <Filter>Header Files</Filter>
+      <Filter>Header Files\NewFilter5</Filter>
     </ClInclude>
     <ClInclude Include="RNG.h">
-      <Filter>Header Files</Filter>
+      <Filter>Header Files\NewFilter6</Filter>
+    </ClInclude>
+    <ClInclude Include="Flags.h">
+      <Filter>Header Files\NewFilter6</Filter>
+    </ClInclude>
+    <ClInclude Include="Sprite.h">
+      <Filter>Header Files\NewFilter6</Filter>
+    </ClInclude>
+    <ClInclude Include="Vec2.h">
+      <Filter>Header Files\NewFilter7</Filter>
+    </ClInclude>
+    <ClInclude Include="Window.h">
+      <Filter>Header Files\NewFilter7</Filter>
+    </ClInclude>
+    <ClInclude Include="DrawingSystem.h">
+      <Filter>Header Files\NewFilter4</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

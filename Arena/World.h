@@ -2,11 +2,10 @@
 #include "Vec2.h"
 #include "Flags.h"
 #include "Sprite.h"
-#include <bitset>
 
 #define ENTITY_COUNT 1000
 
-// contains all game data in contiguous memory ordered by component.
+// contains all game data in contiguous memory ordered by component and some functions to manage it.
 class World
 {
 public:
@@ -20,6 +19,7 @@ public:
 	void give_sprite(unsigned int entity, Sprite sprite);
 private:
 public:
+	// components
 	unsigned int m_mask[ENTITY_COUNT];
 	Vec2<float> m_position[ENTITY_COUNT];
 	//Velocity velocity[ENTITY_COUNT];
