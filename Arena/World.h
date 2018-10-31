@@ -2,6 +2,7 @@
 #include "Vec2.h"
 #include "Flags.h"
 #include "Sprite.h"
+#include <bitset>
 
 #define ENTITY_COUNT 1000
 
@@ -19,7 +20,7 @@ public:
 	void give_sprite(unsigned int entity, Sprite sprite);
 private:
 public:
-	int m_mask[ENTITY_COUNT];
+	unsigned int m_mask[ENTITY_COUNT];
 	Vec2<float> m_position[ENTITY_COUNT];
 	//Velocity velocity[ENTITY_COUNT];
 	Sprite m_sprite[ENTITY_COUNT];

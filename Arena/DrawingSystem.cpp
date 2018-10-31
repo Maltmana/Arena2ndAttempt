@@ -15,18 +15,17 @@ void DrawingSystem::Draw()
 	unsigned int entity;
 	for (entity = 0; entity < ENTITY_COUNT; ++entity)
 	{
-		if ((m_world.m_mask[entity] & SysMask::Drawable) == SysMask::Drawable)
+		if ((m_world.m_mask[entity] & (unsigned int)SysMask::Drawable) == SysMask::Drawable)
 		{
 			for (auto & graphic : m_graphicContainer.getGraphics())
 			{
-				ray::Rectangle sourceRec = { 0, 0, (float)graphic->m_spriteWidth, (float)graphic->m_spriteHeight };
-
-
-				// NOTE: Destination rectangle (screen rectangle where drawing part of texture)
-				ray::Rectangle destRec = { m_world.m_position[entity].x ,m_world.m_position[entity].y, (float)graphic->m_spriteWidth, (float)graphic->m_spriteHeight };
-				// NOTE: Origin of the texture (rotation/scale point), it's relative to destination rectangle size
-				ray::Vector2 origin = { 0,0 };
-				ray::DrawTexturePro(graphic.get()->m_texture, sourceRec, destRec, { 0.0,0.0 }, 0.0, WHITE);
+				if (m_world.m_sprite[entity] == graphic->m_sprite)
+				{
+					ray::Rectangle sourceRec = { 0, 0, (float)graphic->m_spriteWidth, (float)graphic->m_spriteHeight };
+					ray::Rectangle destRec = { m_world.m_position[entity].x ,m_world.m_position[entity].y, (float)graphic->m_spriteWidth, (float)graphic->m_spriteHeight };
+					ray::Vector2 origin = { 0,0 };
+					ray::DrawTexturePro(graphic.get()->m_texture, sourceRec, destRec, { 0.0,0.0 }, 0.0, WHITE);
+				}
 			}
 		}
 	}

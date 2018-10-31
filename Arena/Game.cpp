@@ -41,6 +41,9 @@ void Game::draw()
 void Game::load_graphics()
 {
 	m_graphicContainer.getGraphics().emplace_back(std::make_unique<Graphic>(Sprite::EdgeLord, "assets/EdgeLord.png", 16, 18));
+	m_graphicContainer.getGraphics().emplace_back(std::make_unique<Graphic>(Sprite::NobleFemale, "assets/NobleFemale.png", 16, 18));
+	m_graphicContainer.getGraphics().emplace_back(std::make_unique<Graphic>(Sprite::NobleMale, "assets/NobleMale.png", 16, 18));
+	m_graphicContainer.getGraphics().emplace_back(std::make_unique<Graphic>(Sprite::Satyr, "assets/Satyr.png", 16, 18));
 }
 
 void Game::create_test_objects()
@@ -51,9 +54,8 @@ void Game::create_test_objects()
 		{
 			unsigned int entity = m_world.get_empty();
 			m_world.give_position(entity, i * 35, j * 35);
-			m_world.give_sprite(entity, Sprite::EdgeLord);
+			m_world.give_sprite(entity, (Sprite)RNG::get_randi(0,3));
 		}
 
 	}
-
 }

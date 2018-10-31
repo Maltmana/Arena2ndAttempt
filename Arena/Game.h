@@ -1,6 +1,7 @@
 #pragma once
 #include "World.h"
 #include "GraphicContainer.h"
+#include "RNG.h"
 
 // Systems
 #include "DrawingSystem.h"

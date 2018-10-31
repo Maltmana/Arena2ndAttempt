@@ -5,5 +5,5 @@ enum class Sprite
 	EdgeLord,
 	NobleMale,
 	Satyr,
-	BootsOfSpeed
+	NobleFemale
 };

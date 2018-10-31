@@ -1,7 +1,7 @@
 #pragma once
 
 namespace CompMask{
-	enum CompMask
+	enum CompMask : unsigned int
 	{
 	None = 0,
 	Position = 1 << 0,
@@ -12,7 +12,7 @@ namespace CompMask{
 }
 
 namespace SysMask {
-	enum SysMask
+	enum SysMask : unsigned int
 	{
 	None = 0,
 	Drawable = (CompMask::Sprite | CompMask::Position)
