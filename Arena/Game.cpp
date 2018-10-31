@@ -7,7 +7,6 @@
 
 Game::Game()
 {
-	create_world();
 	load_graphics();
 	create_test_objects();
 }
@@ -37,7 +36,7 @@ void Game::draw()
 	unsigned int entity;
 	for (entity = 0; entity < ENTITY_COUNT; ++entity)
 	{
-		if (((int)m_world.m_mask[entity] & (int)Component::POSITION) == (int)Component::POSITION)
+		if ((m_world.m_mask[entity] & CompMask::POSITION) == CompMask::POSITION)
 		{
 			for (auto & graphic : m_graphicContainer.getGraphics())
 			{
@@ -57,10 +56,6 @@ void Game::draw()
 	ray::EndDrawing();
 }
 
-void Game::create_world()
-{
-}
-
 void Game::load_graphics()
 {
 	m_graphicContainer.getGraphics().emplace_back(std::make_unique<Graphic>(GraphicType::EdgeLord, "assets/EdgeLord.png", 16, 18));
@@ -69,12 +64,12 @@ void Game::load_graphics()
 void Game::create_test_objects()
 {
 	unsigned int entity = m_world.get_empty();
-	m_world.m_mask[entity] = Component::POSITION;
+	m_world.m_mask[entity] = CompMask::POSITION;
 	m_world.m_position[entity].x = 400.f;
 	m_world.m_position[entity].y = 100.f;
 
 	entity = m_world.get_empty();
-	m_world.m_mask[entity] = Component::POSITION;
+	m_world.m_mask[entity] = CompMask::POSITION;
 	m_world.m_position[entity].x = 400.f;
 	m_world.m_position[entity].y = 400.f;
 

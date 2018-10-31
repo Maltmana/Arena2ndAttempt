@@ -4,10 +4,6 @@
 
 World::World()
 {
-	for (auto& f : m_position)
-	{
-		std::cout << &f.x << '\n';
-	}
 }
 
 

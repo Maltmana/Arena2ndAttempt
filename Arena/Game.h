@@ -16,7 +16,6 @@ public:
 private:
 	void update();
 	void draw();
-	void create_world();
 	void load_graphics();
 	void create_test_objects();
 public:
@@ -29,5 +28,6 @@ private:
 // dont add new stuff until the old stuff is clean and perfect and modeled and understood! and DECOUPLED!!
 // always be able to remove code easily and still continue. with just a few comment outs. decoupling is for your brain not for the compiler
 // stick to 100 lines per class
+// code so that you can have an item and a building and a dude and an effect... not just creature huge class.
 // NEXT_TO_DO
 // make 2 characters with different positions and draw both.

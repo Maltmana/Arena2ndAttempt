@@ -16,7 +16,7 @@ public:
 		unsigned int entity;
 		for (entity = 0; entity < ENTITY_COUNT; ++entity)
 		{
-			if (m_mask[entity] == Component::NONE)
+			if (m_mask[entity] == CompMask::NONE)
 			{
 				return(entity);
 			}
@@ -26,7 +26,7 @@ public:
 	}
 private:
 public:
-	Component m_mask[ENTITY_COUNT];
+	CompMask m_mask[ENTITY_COUNT];
 	Vec2<float> m_position[ENTITY_COUNT];
 	//Velocity velocity[ENTITY_COUNT];
 	//Appearance appearance[ENTITY_COUNT];
