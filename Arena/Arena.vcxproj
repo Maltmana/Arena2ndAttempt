@@ -147,6 +147,7 @@
     <ClCompile Include="World.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Flags.h" />
     <ClInclude Include="Game.h" />
     <ClInclude Include="Graphic.h" />
     <ClInclude Include="GraphicContainer.h" />
