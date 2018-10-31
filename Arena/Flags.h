@@ -28,22 +28,19 @@ typename std::enable_if<EnableBitMaskOperators<Enum>::enable, Enum>::type operat
 	return static_cast<Enum> (static_cast<underlying>(lhs) & static_cast<underlying>(rhs));
 }
 
-enum class CompMask
+const enum class CompMask
 {
 	NONE = 0,
-	POSITION = 1 << 0,
-	VELOCITY = 1 << 1,
-	APPEARANCE = 1 << 2,
-	COMBAT = 1 << 3
+	Position = 1 << 0,
+	Velocity = 1 << 1,
+	Appearance = 1 << 2,
+	Combat = 1 << 3
 };
 ENABLE_BITMASK_OPERATORS(CompMask);
 
-enum class SysMask
+const enum class SysMask
 {
-	NONE = 0,
-	POSITION = 1 << 0,
-	VELOCITY = 1 << 1,
-	APPEARANCE = 1 << 2,
-	COMBAT = 1 << 3
+	None = 0,
+	Graphics = (int)CompMask::Position | (int)CompMask::Appearance
 };
 ENABLE_BITMASK_OPERATORS(SysMask);

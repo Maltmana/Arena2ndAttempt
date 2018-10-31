@@ -46,12 +46,10 @@ void Game::load_graphics()
 void Game::create_test_objects()
 {
 	unsigned int entity = m_world.get_empty();
-	m_world.m_mask[entity] = CompMask::POSITION;
-	m_world.m_position[entity].x = 400.f;
-	m_world.m_position[entity].y = 100.f;
+	m_world.give_position(entity, 100, 400);
 
 	entity = m_world.get_empty();
-	m_world.m_mask[entity] = CompMask::POSITION;
+	m_world.m_mask[entity] = CompMask::Position;
 	m_world.m_position[entity].x = 400.f;
 	m_world.m_position[entity].y = 400.f;
 

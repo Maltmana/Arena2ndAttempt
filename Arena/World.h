@@ -11,19 +11,10 @@ public:
 	World();
 	~World();
 public:
-	unsigned int get_empty()
-	{
-		unsigned int entity;
-		for (entity = 0; entity < ENTITY_COUNT; ++entity)
-		{
-			if (m_mask[entity] == CompMask::NONE)
-			{
-				return(entity);
-			}
-		}
-		printf("Error!  No more entities left!\n");
-		return(ENTITY_COUNT);
-	}
+	// entity functions
+	unsigned int get_empty();
+	// component functions
+	void give_position(unsigned int entity, float x, float y);
 private:
 public:
 	CompMask m_mask[ENTITY_COUNT];

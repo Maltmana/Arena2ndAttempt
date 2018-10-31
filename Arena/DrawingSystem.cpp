@@ -15,7 +15,7 @@ void DrawingSystem::Draw()
 	unsigned int entity;
 	for (entity = 0; entity < ENTITY_COUNT; ++entity)
 	{
-		if ((m_world.m_mask[entity] & CompMask::POSITION) == CompMask::POSITION)
+		if ((m_world.m_mask[entity] & CompMask::Position) == CompMask::Position)
 		{
 			for (auto & graphic : m_graphicContainer.getGraphics())
 			{
