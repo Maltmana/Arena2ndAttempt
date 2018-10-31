@@ -66,6 +66,9 @@
     <ClCompile Include="RNG.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="VelocitySystem.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Game.h">
@@ -102,6 +105,9 @@
       <Filter>Header Files\NewFilter7</Filter>
     </ClInclude>
     <ClInclude Include="DrawingSystem.h">
+      <Filter>Header Files\NewFilter4</Filter>
+    </ClInclude>
+    <ClInclude Include="VelocitySystem.h">
       <Filter>Header Files\NewFilter4</Filter>
     </ClInclude>
   </ItemGroup>

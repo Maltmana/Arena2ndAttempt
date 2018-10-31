@@ -32,8 +32,18 @@ void World::give_position(unsigned int entity, float x, float y)
 	m_mask[entity] |= CompMask::Position;
 }
 
+void World::give_velocity(unsigned int entity, float x, float y)
+{
+	assert((m_mask[entity] & CompMask::Position) == CompMask::Position);
+	m_velocity[entity].x = { x };
+	m_velocity[entity].y = { y };
+	m_mask[entity] |= CompMask::Velocity;
+
+}
+
 void World::give_sprite(unsigned int entity, Sprite sprite)
 {
+	assert((m_mask[entity] & CompMask::Position) == CompMask::Position);
 	m_sprite[entity]={ sprite };
 	m_mask[entity] |= CompMask::Sprite;
 }

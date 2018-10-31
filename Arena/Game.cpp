@@ -7,7 +7,8 @@
 
 Game::Game()
 	:
-	m_drawingSystem{m_world,m_graphicContainer}
+	m_drawingSystem{m_world,m_graphicContainer},
+	m_velocitySystem{m_world}
 {
 	load_graphics();
 	create_test_objects();
@@ -28,6 +29,7 @@ void Game::loop()
 
 void Game::update()
 {
+	m_velocitySystem.update();
 }
 
 void Game::draw()
@@ -54,6 +56,7 @@ void Game::create_test_objects()
 		{
 			unsigned int entity = m_world.get_empty();
 			m_world.give_position(entity, i * 35, j * 35);
+			m_world.give_velocity(entity, i * 0.1, j * 0.1);
 			m_world.give_sprite(entity, (Sprite)RNG::get_randi(0,3));
 		}
 

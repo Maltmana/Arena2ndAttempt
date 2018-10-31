@@ -5,6 +5,7 @@
 
 // Systems
 #include "DrawingSystem.h"
+#include "VelocitySystem.h"
 
 class Game
 {
@@ -28,6 +29,7 @@ private:
 	World m_world;
 	// Systems
 	DrawingSystem m_drawingSystem;
+	VelocitySystem m_velocitySystem;
 };
 
 //_TO_PREVENT_A_THIRD_ATTEMPT:

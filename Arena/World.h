@@ -17,12 +17,13 @@ public:
 	// component functions
 	void give_position(unsigned int entity, float x, float y);
 	void give_sprite(unsigned int entity, Sprite sprite);
+	void give_velocity(unsigned int entity, float x, float y);
 private:
 public:
 	// components
 	unsigned int m_mask[ENTITY_COUNT];
 	Vec2<float> m_position[ENTITY_COUNT];
-	//Velocity velocity[ENTITY_COUNT];
+	Vec2<float> m_velocity[ENTITY_COUNT];
 	Sprite m_sprite[ENTITY_COUNT];
 	//Combat combat[ENTITY_COUNT];
 private:

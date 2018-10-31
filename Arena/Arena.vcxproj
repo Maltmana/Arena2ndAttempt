@@ -145,6 +145,7 @@
     <ClCompile Include="GraphicContainer.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="RNG.cpp" />
+    <ClCompile Include="VelocitySystem.cpp" />
     <ClCompile Include="Window.cpp" />
     <ClCompile Include="World.cpp" />
   </ItemGroup>
@@ -159,6 +160,7 @@
     <ClInclude Include="ray.h" />
     <ClInclude Include="stdafx.h" />
     <ClInclude Include="Vec2.h" />
+    <ClInclude Include="VelocitySystem.h" />
     <ClInclude Include="Window.h" />
     <ClInclude Include="World.h" />
   </ItemGroup>

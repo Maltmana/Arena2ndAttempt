@@ -15,6 +15,7 @@ namespace SysMask {
 	enum SysMask : unsigned int
 	{
 	None = 0,
-	Drawable = (CompMask::Sprite | CompMask::Position)
+	Drawable = (CompMask::Sprite | CompMask::Position),
+	Velocious = (CompMask::Velocity | CompMask::Position)
 	};
 }
