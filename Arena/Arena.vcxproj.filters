@@ -59,9 +59,6 @@
     <ClInclude Include="Graphic.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="GraphicType.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="GraphicContainer.h">
       <Filter>Header Files</Filter>
     </ClInclude>
@@ -72,6 +69,9 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="DrawingSystem.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Sprite.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

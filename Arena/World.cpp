@@ -27,7 +27,13 @@ unsigned int World::get_empty()
 
 void World::give_position(unsigned int entity, float x, float y)
 {
-	m_position[entity].x = x;
-	m_position[entity].y = y;
-	m_mask[entity] = CompMask::Position;
+	m_position[entity].x = { x };
+	m_position[entity].y = { y };
+	m_mask[entity] |= { CompMask::Position };
+}
+
+void World::give_sprite(unsigned int entity, Sprite sprite)
+{
+	m_sprite[entity]={ sprite };
+	m_mask[entity] |= { CompMask::Sprite };
 }

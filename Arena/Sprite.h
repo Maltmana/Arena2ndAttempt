@@ -1,6 +1,6 @@
 #pragma once
 
-enum class GraphicType
+enum class Sprite
 {
 	EdgeLord,
 	NobleMale,
