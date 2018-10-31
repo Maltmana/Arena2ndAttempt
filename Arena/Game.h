@@ -21,5 +21,6 @@ private:
 public:
 private:
 	GraphicContainer m_graphicContainer;
+	World m_world;
 };
 
