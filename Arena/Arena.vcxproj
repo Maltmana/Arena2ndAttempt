@@ -139,6 +139,8 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Command.cpp" />
+    <ClCompile Include="CommandHandler.cpp" />
     <ClCompile Include="DrawingSystem.cpp" />
     <ClCompile Include="Game.cpp" />
     <ClCompile Include="Graphic.cpp" />
@@ -150,6 +152,8 @@
     <ClCompile Include="World.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Command.h" />
+    <ClInclude Include="CommandHandler.h" />
     <ClInclude Include="DrawingSystem.h" />
     <ClInclude Include="Flags.h" />
     <ClInclude Include="Game.h" />

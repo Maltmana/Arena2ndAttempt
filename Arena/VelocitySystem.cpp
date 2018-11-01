@@ -19,8 +19,8 @@ void VelocitySystem::update()
 	{
 		if ((m_world.m_mask[entity] & (unsigned int)SysMask::Velocious) == SysMask::Velocious)
 		{
-			m_world.m_position[entity].x -= m_world.m_velocity[entity].x;
-			m_world.m_position[entity].y -= m_world.m_velocity[entity].y;
+			m_world.m_position[entity].x += m_world.m_velocity[entity].x;
+			m_world.m_position[entity].y += m_world.m_velocity[entity].y;
 		}
 	}
 }

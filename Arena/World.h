@@ -17,7 +17,7 @@ public:
 	// component functions
 	void give_position(unsigned int entity, float x, float y);
 	void give_sprite(unsigned int entity, Sprite sprite);
-	void give_velocity(unsigned int entity, float x, float y);
+	void give_velocity(unsigned int entity, float x = 0, float y = 0);
 private:
 public:
 	// components
