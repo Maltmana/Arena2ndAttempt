@@ -4,7 +4,7 @@
 CommandHandler::CommandHandler(World& p_world)
 	:
 	m_world{p_world},
-	m_spacebar {new CreateRandomEntity}
+	m_spacebar {new CreateRandomEntityCommand}
 {
 }
 

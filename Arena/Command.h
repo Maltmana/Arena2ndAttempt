@@ -10,7 +10,7 @@ public:
 	virtual void execute(World& p_world) = 0;
 };
 
-class CreateRandomEntity : public Command
+class CreateRandomEntityCommand : public Command
 {
 public:
 	void execute(World& p_world) override
