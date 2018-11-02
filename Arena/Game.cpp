@@ -9,7 +9,8 @@ Game::Game()
 	:
 	m_commandHandler{ m_world },
 	m_drawingSystem{m_world,m_graphicContainer},
-	m_velocitySystem{m_world}
+	m_velocitySystem{m_world},
+	m_selectionSystem{m_world}
 {
 	load_graphics();
 	create_test_objects();
@@ -32,6 +33,7 @@ void Game::update()
 {
 	m_commandHandler.update();
 	m_velocitySystem.update();
+	m_selectionSystem.update();
 }
 
 void Game::draw()
@@ -62,6 +64,7 @@ void Game::create_test_objects()
 				m_world.give_position(entity, i * 35 + 300, j * 35 + 300);
 				m_world.give_velocity(entity);
 				m_world.give_sprite(entity, (Sprite)RNG::get_randi(0, 3));
+				m_world.toggle_selectable(entity);
 			}
 			else
 			{

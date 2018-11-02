@@ -41,6 +41,13 @@ void World::give_velocity(unsigned int entity, float x, float y)
 
 }
 
+void World::toggle_selectable(unsigned int entity)
+{
+	assert((m_mask[entity] & CompMask::Position) == CompMask::Position);
+	m_selected[entity] = false;
+	m_mask[entity] |= CompMask::Selectable;
+}
+
 void World::give_sprite(unsigned int entity, Sprite sprite)
 {
 	assert((m_mask[entity] & CompMask::Position) == CompMask::Position);

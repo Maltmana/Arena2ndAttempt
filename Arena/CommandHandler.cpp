@@ -11,4 +11,5 @@ CommandHandler::CommandHandler(World& p_world)
 void CommandHandler::update()
 {
 	if (ray::IsKeyReleased(KEY_SPACE)) { m_spacebar->execute(m_world); };
+	if (ray::IsKeyReleased(KEY_BACKSPACE)) {}
 }

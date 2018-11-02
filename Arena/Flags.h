@@ -7,7 +7,8 @@ namespace CompMask{
 	Position = 1 << 0,
 	Velocity = 1 << 1,
 	Sprite = 1 << 2,
-	Combat = 1 << 3
+	Selectable = 1 << 3,
+	Combat = 1 << 4
 	};
 }
 
@@ -16,6 +17,7 @@ namespace SysMask {
 	{
 	None = 0,
 	Drawable = (CompMask::Sprite | CompMask::Position),
-	Velocious = (CompMask::Velocity | CompMask::Position)
+	Velocious = (CompMask::Velocity | CompMask::Position),
+	Selectable = (CompMask::Selectable | CompMask::Position)
 	};
 }

@@ -18,6 +18,7 @@ public:
 	void give_position(unsigned int entity, float x, float y);
 	void give_sprite(unsigned int entity, Sprite sprite);
 	void give_velocity(unsigned int entity, float x = 0, float y = 0);
+	void toggle_selectable(unsigned int entity);
 private:
 public:
 	// components
@@ -25,6 +26,7 @@ public:
 	Vec2<float> m_position[ENTITY_COUNT];
 	Vec2<float> m_velocity[ENTITY_COUNT];
 	Sprite m_sprite[ENTITY_COUNT];
+	bool m_selected[ENTITY_COUNT]; // TODO turn this into bit field save space.
 	//Combat combat[ENTITY_COUNT];
 private:
 };

@@ -75,6 +75,9 @@
     <ClCompile Include="CommandHandler.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="SelectionSystem.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Game.h">
@@ -121,6 +124,9 @@
     </ClInclude>
     <ClInclude Include="CommandHandler.h">
       <Filter>Header Files\NewFilter3</Filter>
+    </ClInclude>
+    <ClInclude Include="SelectionSystem.h">
+      <Filter>Header Files\NewFilter4</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
